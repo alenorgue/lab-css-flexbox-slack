@@ -96,16 +96,16 @@ header {
 
 .header__sign-up__google {
     display: flex;
-    flex-direction: row;
     text-align: center;
     justify-items: center;
+
 }
 
 .header__sign-up__google button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     background-color: var(--button-blue);
     color: white;
     text-transform: uppercase;
@@ -113,22 +113,27 @@ header {
     padding: 7px;
     border: none;
     border-radius: 5px;
-    gap: 50px;
+    position: relative;
     width: 336px;
     max-width: 90vw;
+    height: 39.6px;
     margin-bottom: 20px;
 }
 
-.header__sign-up__google__text {
-    align-self: center;
+#logo-google {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 40px;
+    background-color: white;
+    border-radius: 2px;
+    width: 30px;
+    border: white solid 1px;
 }
 
-#logo-google {
-    width: 30px;
-    align-self: start;
-    background-color: white;
-    border: white solid 5px;
-}
+
+
 
 #hero-product-ui {
     position: relative;
@@ -230,7 +235,8 @@ main {
     color: #000000;
 }
 
-.main__join {display: flex;
+.main__join {
+    display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--background-purple);
@@ -269,37 +275,59 @@ main {
     border-radius: 5px;
     margin-top: 10px;
 }
-footer {padding: 20px;
+
+footer {
+    padding: 20px;
 }
-footer small {color: gray;}
-.footer__links__text {border-top: rgb(214, 209, 209) solid 1px;
+
+footer small {
+    color: gray;
+}
+
+.footer__links__text {
+    border-top: rgb(214, 209, 209) solid 1px;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     list-style: none;
-    
+
     padding: 25px 0px;
 }
-.footer__links__text__items {display: flex;
-gap: 10px;
+
+.footer__links__text__items {
+    display: flex;
+    gap: 10px;
 }
-footer li {font-size: 0.9rem;
+
+footer li {
+    font-size: 0.9rem;
     font-weight: 600;
-    color: var(--footer-links-grey);}
-.footer__links__text__items-blue {display: flex;
-    gap: 10px;}
-.footer__links__text__items-blue li { color: var(--links-blue);}
-
-footer img {max-height: fit-content;
-height: auto;
-padding: 1px;}
-
-.footer__links__logos {display: flex;
-justify-content: space-between;
-list-style: none;
- padding: 25px 0px;   
+    color: var(--footer-links-grey);
 }
+
+.footer__links__text__items-blue {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__links__text__items-blue li {
+    color: var(--links-blue);
+}
+
+footer img {
+    max-height: fit-content;
+    height: auto;
+    padding: 1px;
+}
+
+.footer__links__logos {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 25px 0px;
+}
+
 @media (max-width: 340px) {
 
     .header__sign-up__google button {
