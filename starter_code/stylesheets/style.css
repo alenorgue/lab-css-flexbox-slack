@@ -142,20 +142,58 @@ main {
     z-index: 2;
     background-color: var(--background-ivory);
     margin-top: -25%; 
-    padding: 30px;
     display: flex;
     flex-direction: column;
   }
 .main__logos {display: flex;
-flex-direction: column;}
+flex-direction: column;
+padding: 30px;}
 
+.main__logos__title p {color: var(--titles-black);
+font-size: 0.75rem;
+font-weight: 600;
+text-transform: uppercase;
+margin-bottom: 20px;
+text-align: center;}
 .main__logos__img {display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
     gap: 8px;
-flex-wrap: wrap;}
+    flex-wrap: wrap;}
+.main__logos__img img{max-height: 32px;margin-top: 20px;}
 
-.main__logos__img img{max-height: 32px;}
+.main__info {background-color: white;
+padding: 40px 25px;
+display: flex;
+flex-direction: column; 
+align-items: center;
+justify-content: center;
+text-align: center;}
+
+.main__info h3, 
+.main__info span {color: var(--background-purple);
+font-weight: 600;
+font-size: 1.7rem;
+}
+.main__info__title p {font-size: 0.9rem;
+    margin-top: 15px;}
+
+.main__info__text {display: flex;
+    flex-direction: column;
+    width: 33vw;
+}
+.main__info__list { margin-top: 45px;}
+.main__info__text span {font-size: 3rem;}
+.main__info__text p {font-size: 0.8rem;
+font-weight: 800;}
+.main__info__footer {font-size: 0.7rem;
+margin-top: 35px;
+color: gray;
+}
+.main__info__footer span {
+    font-size: 0.7rem;
+margin-top: 35px;color: #000000;}
 @media (max-width: 340px) {
 
 .header__sign-up__google button {
