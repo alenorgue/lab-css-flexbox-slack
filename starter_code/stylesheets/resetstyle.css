@@ -21,3 +21,6 @@ html {
     max-width: 100%;
     height: auto;
   }
+  @media (min-width: 1024px) {.navbar__buttons__desktop {
+    display: visible;
+} }
