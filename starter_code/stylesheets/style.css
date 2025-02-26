@@ -143,9 +143,19 @@ main {
     background-color: var(--background-ivory);
     margin-top: -25%; 
     padding: 30px;
+    display: flex;
+    flex-direction: column;
   }
+.main__logos {display: flex;
+flex-direction: column;}
 
+.main__logos__img {display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 8px;
+flex-wrap: wrap;}
 
+.main__logos__img img{max-height: 32px;}
 @media (max-width: 340px) {
 
 .header__sign-up__google button {
