@@ -10,6 +10,7 @@
   <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
 
   <!-- link your styles -->
+  <link rel="stylesheet" href="./stylesheets/resetstyle.css">
   <link rel="stylesheet" href="./stylesheets/style.css" />
 
   <link rel="icon" type="image/x-icon" href="./images/slack-icon.png">
@@ -19,26 +20,29 @@
 <body>
   <!-- NAVBAR -->
   <nav>
-    <div>
-      <img src="./images/slack-logo.png" alt="Slack logo" />
-
-      <ul>
-        <li>
-          <a href="#">Product</a>
-        </li>
-        <li>
-          <a href="#">Solutions</a>
-        </li>
-        <li>
-          <a href="#">Resources</a>
-        </li>
-        <li>
-          <a href="#">Pricing</a>
-        </li>
-      </ul>
+    <div class="logo">
+      <img src="./images/slack-logo.png" alt="Slack logo" id="slack-logo"/> </div>
+      
+      
+      <div class="navbar__menu">
+        <ul>
+          <li>
+            <a href="#">Product</a>
+          </li>
+          <li>
+            <a href="#">Solutions</a>
+          </li>
+          <li>
+            <a href="#">Resources</a>
+          </li>
+          <li>
+            <a href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div>
+    <div class="navbar__buttons">
       <button>
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
@@ -46,15 +50,17 @@
       <button>
         <img src="./images/icon-menu.png" alt="Menu icon">
       </button>
-
-      <ul hidden>
-        <li>
-          <a href="#">Sign in</a>
-        </li>
-        <li>
-          <a href="#">Try for free</a>
-        </li>
-      </ul>
+<div class="navbar__buttons__desktop">
+  
+        <ul>
+          <li>
+            <a href="#">Sign in</a>
+          </li>
+          <li>
+            <a href="#">Try for free</a>
+          </li>
+        </ul>
+</div>
     </div>
   </nav>
 
