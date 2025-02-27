@@ -10,7 +10,7 @@
 }
 
 html {
-    font-size: clamp(0.7rem, 2vw, 3rem);
+    font-size: clamp(0.7rem, 1.8vw, 3rem);
 }
 
 body {
@@ -18,7 +18,7 @@ body {
     width: 100vw;
 }
 
-.navbar__menu {
+.navbar__menu ul {
     display: none;
 }
 
@@ -366,11 +366,14 @@ footer img {
 
     .hero-img {
         overflow: visible;
+        height: 50%;
     }
 
     #hero-product-ui {
-        max-width: 40vw;
-        transform: translateX(150px)
+        max-width: 380px;
+        transform: translateX(170px);
+        height: 300px;
+        align-self: center;
     }
 
     main {
@@ -434,7 +437,7 @@ footer img {
 @media (min-width: 1024px) {
     nav {
         display: flex;
-        justify-content: space-between;
+      
         gap: 15px;
         align-content: center;
     }
@@ -446,18 +449,18 @@ footer img {
     .navbar__menu {
         display: flex;
         align-items: center;
+        gap: 35px;
     }
 
     .navbar__menu ul {
         padding: 0;
         margin: 0;
         list-style: none;
+        display: flex;
+        margin-right: 10px;
+        gap: 25px;
     }
 
-    .navbar__menu li {
-        display: inline-block;
-        margin-right: 10px;
-        /* Espaciado entre elementos */
     }
 
     .navbar__menu a {
@@ -503,4 +506,54 @@ footer img {
     nav button {
         margin-right: 0px;
     }
-}
+    .main__join__buttons {display: flex;
+    gap: 10px;
+    }
+    .main__join__button1 button {
+        font-weight: 700;
+        padding: 15px 10px;
+        width: 15vw;
+    }
+    
+    .main__join__button2 button {
+        font-weight: 700;
+        padding: 18px 10px;
+        width: 15vw;
+    }
+    .footer__links__text {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 25px;
+    }
+    @media (min-width: 1440px) { 
+    nav {font-size: 0.8rem;}
+    header {height: 50vh;
+    background-image: none;}
+    .header__hero__title {font-size: 1.5rem;
+    padding: 40px;}
+    .header__sign-up {flex-direction: row; 
+        padding-bottom: 0px;}
+    .header__sign-up__email {display: flex;}
+    .header__sign-up__email button {
+        font-weight: 600;
+        padding: 12px 10px;
+        width: 350px;  
+    }
+    
+    .header__sign-up__google {
+        display: flex;
+        text-align: center;
+        justify-items: center;
+    }
+    
+    .header__sign-up__google button {
+    
+        font-weight: 600;
+        padding: 12px 10px;
+        width: 350px;
+    }
+    .main__logos {height: 12vh;}
+    .main__info__title {padding: 80px;}
+    .main__join__title {padding: 50px;
+    font-size: 1.6rem;}
+    }
