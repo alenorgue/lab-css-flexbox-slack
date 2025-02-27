@@ -183,7 +183,7 @@ main {
 }
 
 .main__logos__img img {
-    max-height: 32px;
+    height: 32px;
     margin-top: 20px;
 }
 
