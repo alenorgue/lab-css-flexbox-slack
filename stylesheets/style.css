@@ -31,7 +31,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--background-purple);
-    padding: 15px;
+    padding: 20px;
 }
 
 .navbar__buttons {
@@ -65,13 +65,13 @@ header {
     padding: 15px;
 }
 
-.header__hero__title h1 {
+.header__hero__title h1 { font-size: 5rem;
     font-weight: 600;
     padding: 10px;
 }
 
 .header__hero__text {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     margin-bottom: 15px;
 }
 
@@ -166,7 +166,7 @@ main {
 
 .main__logos__title p {
     color: var(--titles-black);
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -348,7 +348,7 @@ footer img {
         align-items: center;
         overflow: hidden;
     }
-
+    .header__hero__title h1 {font-size: 2rem;}
     .header__hero,
     .header__sign-up {
         align-items: start;
