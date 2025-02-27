@@ -335,7 +335,7 @@ footer img {
 
 @media (min-width: 768px) {
     #slack-logo {
-        width: 15vw;
+        width: 16vw;
     }
 
     header {
@@ -435,6 +435,9 @@ footer img {
 }
 
 @media (min-width: 1024px) {
+    #slack-logo {
+        width: 12vw;
+    }
     nav {
         display: flex;
         font-size: 0.8rem;
@@ -536,6 +539,9 @@ footer img {
 }
 
 @media (min-width: 1440px) {
+    #slack-logo {
+        width: 10vw;
+    }
     nav {
         font-size: 0.7rem;
     }
