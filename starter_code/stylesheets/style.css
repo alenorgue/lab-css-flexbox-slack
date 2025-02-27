@@ -437,7 +437,7 @@ footer img {
 @media (min-width: 1024px) {
     nav {
         display: flex;
-      
+        font-size: 0.8rem;
         gap: 15px;
         align-content: center;
     }
@@ -461,7 +461,7 @@ footer img {
         gap: 25px;
     }
 
-    }
+
 
     .navbar__menu a {
         color: white;
@@ -506,54 +506,86 @@ footer img {
     nav button {
         margin-right: 0px;
     }
-    .main__join__buttons {display: flex;
-    gap: 10px;
+
+    nav span {
+        font-size: 0.6rem;
     }
+
+    .main__join__buttons {
+        display: flex;
+        gap: 10px;
+    }
+
     .main__join__button1 button {
         font-weight: 700;
         padding: 15px 10px;
         width: 15vw;
     }
-    
+
     .main__join__button2 button {
         font-weight: 700;
-        padding: 18px 10px;
+        padding: 15px 10px;
         width: 15vw;
     }
+
     .footer__links__text {
         flex-direction: row;
         justify-content: space-between;
         padding: 25px;
     }
-    @media (min-width: 1440px) { 
-    nav {font-size: 0.8rem;}
-    header {height: 50vh;
-    background-image: none;}
-    .header__hero__title {font-size: 1.5rem;
-    padding: 40px;}
-    .header__sign-up {flex-direction: row; 
-        padding-bottom: 0px;}
-    .header__sign-up__email {display: flex;}
+}
+
+@media (min-width: 1440px) {
+    nav {
+        font-size: 0.7rem;
+    }
+
+    header {
+        background-image: none;
+    }
+
+    .header__hero__title {
+        padding: 40px;
+    }
+
+    .header__sign-up {
+        flex-direction: row;
+        padding-bottom: 0px;
+    }
+
+    .header__sign-up__email {
+        display: flex;
+    }
+
     .header__sign-up__email button {
         font-weight: 600;
         padding: 12px 10px;
-        width: 350px;  
+        width: 350px;
     }
-    
+
     .header__sign-up__google {
         display: flex;
         text-align: center;
         justify-items: center;
     }
-    
+
     .header__sign-up__google button {
-    
+
         font-weight: 600;
         padding: 12px 10px;
         width: 350px;
     }
-    .main__logos {height: 12vh;}
-    .main__info__title {padding: 80px;}
-    .main__join__title {padding: 50px;
-    font-size: 1.6rem;}
+
+    .main__info__title {
+        padding: 80px;
     }
+
+    .main__join__title {
+        padding: 50px;
+        font-size: 1.6rem;
+    }
+
+    footer li {
+        font-size: 0.5rem;
+    }
+}
